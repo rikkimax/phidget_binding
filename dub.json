@@ -1,10 +1,10 @@
 {
 	"name": "phidget_binding",
 	"authors": [
-		"rikki"
+		"Richard (Rikki Andrew Cattermole)"
 	],
-	"description": "A minimal D application.",
-	"copyright": "Copyright © 2017, rikki",
+	"description": "A binding to Phidgets c API",
+	"copyright": "Phidgets Inc?",
 	"license": "lgpl-3.0",
 
 	"targetType": "none",

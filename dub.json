@@ -1,0 +1,43 @@
+{
+	"name": "phidget_binding",
+	"authors": [
+		"rikki"
+	],
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2017, rikki",
+	"license": "lgpl-3.0",
+
+	"targetType": "none",
+
+	"subPackages": [
+		{
+			"name": "example_helloworld",
+			"targetType": "executable",
+			"sourceFiles": ["examples/HelloWorld.d"],
+
+			"dependencies": {
+				"phidget_binding:lib": "*"
+			}
+		},
+
+		{
+			"name": "example_interfacekit_simple",
+			"targetType": "executable",
+			"sourceFiles": ["examples/InterfaceKit_Simple.d"],
+
+			"dependencies": {
+				"phidget_binding:lib": "*"
+			}
+		},
+
+		{
+			"name": "lib",
+			"targetType": "library",
+			"sourcePaths": ["source"],
+
+			"dependencies": {
+				"derelict-util": "~>2.1.0"
+			}
+		}
+	]
+}
